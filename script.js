@@ -27,3 +27,27 @@ console.log(result)
 -key length must be at least 10 characters */
 
 
+document.getElementById('submit').addEventListener('click', function() {
+
+    let password = document.getElementById('password').value;
+
+    let firstUppercase = /^[A-Z]/.test(passwor june 1 - july 1d);
+    let hasNumbers = /(.*\d){4}/.test(password);
+    let hasCharacter = /[(-@/*]+/.test(password);
+    let longEnough = password.length >= 10;
+
+
+
+    if (firstUppercase && hasCharacter && hasNumbers && longEnough) {
+        alert ('good password')
+    } else {
+        alert ('thats a terrible password! you need capital first letter, 4 numbers, 1 special character, 10 character length')
+    }
+})
+
+//----------------------------------------------------------------------------
+/* problem 4 Create a function that 
+when passing the number of the month of the year returns the name of the month and vice versa */
+
+
+/* 5) create a function that receives the text and converts it to base64 and another that decodes said text */
