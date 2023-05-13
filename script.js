@@ -1,7 +1,7 @@
-// Problem 1: You are receiving values from an AXIOS request, said api returns 2 
-// arrays with the following values [1,4,5,8,10,30] and ["January", "February", "March", "April", "May" ,"June"] 
-// the goal is to build a JSON Array to be used in the front, The return output should be similar to 
-// [ {"January":1, "February":4}..... ] Note: The function should only have one for loop.
+/* Problem 1: You are receiving values from an AXIOS request, said api returns 2 
+ arrays with the following values [1,4,5,8,10,30] and ["January", "February", "March", "April", "May" ,"June"] 
+ the goal is to build a JSON Array to be used in the front, The return output should be similar to 
+ [ {"January":1, "February":4}..... ] Note: The function should only have one for loop. */
 
  let numbers = [1,4,5,8,10,30]
 let months = ["January", "February", "March", "April", "May" ,"June"]
@@ -31,7 +31,7 @@ document.getElementById('submit').addEventListener('click', function() {
 
     let password = document.getElementById('password').value;
 
-    let firstUppercase = /^[A-Z]/.test(passwor june 1 - july 1d);
+    let firstUppercase = /^[A-Z]/.test(password);
     let hasNumbers = /(.*\d){4}/.test(password);
     let hasCharacter = /[(-@/*]+/.test(password);
     let longEnough = password.length >= 10;
