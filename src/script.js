@@ -1,11 +1,21 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1
+let randomNumber
 let startGame = document.getElementById('startgame')
+let image = document.getElementById('imagecat')
+let div = document.getElementById('hiddendiv')
+let pEl = document.getElementById('pel')
+let h1El =document.getElementById('h1el')
 
 startGame.addEventListener('click', function() {
-    location.reload()
+    randomNumber = Math.floor(Math.random() * 100) + 1
+    console.log(randomNumber)
+    image.classList.add('hidden')
+    pEl.classList.add('hidden')
+    div.classList.remove('mt-20')
+    h1El.classList.remove('hidden')
+    setTimeout(guessNumber, 100);
 })
 
-console.log(randomNumber)
+
 
 let guess = null
 
@@ -31,10 +41,13 @@ function guessNumber() {
         guessNumber();
     } else if (guess === randomNumber) {
         alert('you got it!!!!')
+        image.classList.remove('hidden')
+        pEl.classList.remove('hidden')
+        h1El.classList.add('hidden')
+        div.classList.add('mt-20')
     }
 }
 
-guessNumber();
 
-   
+
 
