@@ -10,25 +10,38 @@
   <body
     class="bg-indigo-800 flex flex-col items-center justify-center min-h-screen"
   >
-    <h1 id="h1el" class="text-6xl font-bold text-white text-center">
-      GUESS THE NUMBER 1-100!
-    </h1>
-    <p class="text-white m-2 text-center">
-      if you guess correctly you will win... something..
-    </p>
-    <div id="hiddendiv" class="z-10 flex flex-col items-center justify-center">
-    <button
-      id="startgame"
-      class="m-10 px-5 py-2 font-bold text-white bg-purple-600 rounded-full hover:bg-purple-700 z-10"
-    >
-      START GAME
-    </button>
-    <p id="pel" class="hidden z-10 m-6 text-white font-bold text-3xl bg-indigo-800 px-5 py-2 text-center">You win ME!!!! MEOW</p>
-    </div>
-    <img id="imagecat" class="absolute max-w-sm rounded-xl hidden"
-      src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-      alt="catpic"
-    />
+    <main class="m-20">
+      <h1 id="h1el" class="text-6xl font-bold text-white text-center">
+        GUESS THE NUMBER 1-100!
+      </h1>
+
+      <p class="text-white m-2 text-center">
+        if you guess correctly you will win... something..
+      </p>
+      <div
+        id="hiddendiv"
+        class="z-10 flex flex-col items-center justify-center"
+      >
+        <button
+          id="startgame"
+          class="m-10 px-5 py-2 font-bold text-white bg-purple-600 rounded-full hover:bg-purple-700 z-10"
+        >
+          START GAME
+        </button>
+        <p
+          id="pel"
+          class="hidden z-10 m-6 text-white font-bold text-3xl bg-indigo-800 px-5 py-2 text-center"
+        >
+          You win ME!!!! MEOW
+        </p>
+      </div>
+      <img
+        id="imagecat"
+        class="absolute max-w-sm rounded-xl hidden"
+        src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+        alt="catpic"
+      />
+    </main>
     <script src="src/script.js"></script>
   </body>
 </html>
