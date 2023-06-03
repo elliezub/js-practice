@@ -26,7 +26,7 @@ function guessNumber() {
 
   let guess = Number(input);
 
-  if (isNaN(guess) || guess > 100) {
+  if (isNaN(guess) || guess > 100 || guess < 1) {
     alert(`please enter a number 1-100!`);
     guessNumber();
   } else if (guess > randomNumber) {
